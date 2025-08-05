@@ -1,0 +1,68 @@
+---
+layout: archive
+title: Press & Media
+permalink: /press/
+author_profile: true
+---
+
+<div class="press-page">
+  
+  {% for item in site.data.press %}
+  <div class="press-item">
+    <span class="press-date">{{ item.date }}</span>
+    <a href="{{ item.url }}" class="press-link">{{ item.publication }} - {{ item.title }}</a>
+  </div>
+  {% endfor %}
+  
+</div>
+
+<style>
+.press-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.press-page h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.press-item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.press-date {
+  font-weight: normal;
+  color: #666;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.press-link {
+  color: #0066cc;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.press-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .press-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .press-date {
+    min-width: auto;
+    font-size: 0.9em;
+  }
+}
+</style>
