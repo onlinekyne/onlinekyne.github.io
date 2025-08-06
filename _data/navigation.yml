@@ -8,14 +8,24 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Math In Drag"
-    url: /mathindrag/
+
+  - title: "About"
+    url: /about
 
   - title: "Blog"
     url: https://onlinekyne.substack.com/
 
+  - title: "Book"
+    url: /mathindrag/
+
+  - title: "Work"
+    url: /work
+
   - title: "Press"
-    url: /press/
+    url: /press
+
+  - title: "Contact Me"
+    url: /contact
         
  # - title: "CV"
   #  url: /cv/
@@ -23,5 +33,5 @@ main:
   # - title: "CV"
   #   url: /cv-json/
     
-  - title: "Guide"
-    url: /markdown/
+  #- title: "Guide"
+   # url: /markdown/

@@ -1,11 +1,12 @@
 ---
 permalink: /
-title: 
+title: About Kyne
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
 
 Kyne Santos (he/him/she/her) is a math communicator, writer, keynote speaker, and world renowned drag queen.
 
