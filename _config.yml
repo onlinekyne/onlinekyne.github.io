@@ -24,8 +24,8 @@ author:
   # Biographic information
   avatar           : "profile_pic.jpg"
   name             : "Kyne Santos"
-  pronouns         : # "he/him/she/her"  
-  bio              : "Author, math communicator"
+  pronouns         : "he/him (out of drag) & she/her (in drag)"  
+  bio              : "Author, math communicator, MSc"
   location         : "Toronto, ON"
   employer         : # "Red Brick University"
   uri              : # URL
@@ -52,7 +52,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "onlinekyne.bsky.social" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username

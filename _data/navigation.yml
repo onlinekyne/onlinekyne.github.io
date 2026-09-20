@@ -9,8 +9,8 @@
 
 main:
 
-  - title: "About"
-    url: /about
+  - title: "Bio"
+    url: /bio
 
   - title: "Blog"
     url: https://onlinekyne.substack.com/
