@@ -1,0 +1,50 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { url } from '../utils/paths';
+---
+
+<!doctype html>
+<html lang="en">
+  <head><BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} image="/kyne.jpg" /></head>
+  <body>
+    <Header />
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Mathematics · Culture · Public Life</p>
+          <h1>Kyne Santos</h1>
+          <p class="role">Mathematician, researcher, author, and science communicator.</p>
+          <p class="lead">Kyne studies and tells stories about the intersections of mathematics, technology, culture, and society. Her work brings rigorous ideas into public conversation through research, writing, teaching, video, and drag.</p>
+          <div class="actions"><a class="btn" href={url('/research')}>Explore research</a><a class="btn btn-outline" href={url('/math-in-drag')}>Math In Drag</a></div>
+        </div>
+        <img src={url('/kyne.jpg')} alt="Kyne Santos" width="200" height="200" fetchpriority="high" />
+      </section>
+      <section class="grid">
+        <article><p class="eyebrow">Research</p><h2>Questions worth sharing</h2><p>Current interests include networks, graph theory, computer science, mathematics education, and the history and foundations of mathematics.</p><a href={url('/research')}>Research and projects →</a></article>
+        <article><p class="eyebrow">Book</p><h2><em>Math In Drag</em></h2><p>A funny, personal, and curious journey through mathematics, drag, history, and the joy of asking better questions.</p><a href={url('/math-in-drag')}>About the book →</a></article>
+        <article><p class="eyebrow">Public work</p><h2>Writing, video, and conversation</h2><p>Kyne’s videos, podcast work, essays, and speaking bring mathematical ideas to broad audiences without flattening their complexity.</p><a href={url('/media')}>Writing and media →</a></article>
+      </section>
+      <section class="recognition"><p class="eyebrow">Recognition</p><p>Recipient of the National Academies’ Eric and Wendy Schmidt Award for Excellence in Science Communications and the King Charles III Coronation Medal for STEMM Engagement.</p><a href={url('/press')}>Press and awards →</a></section>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .hero { display:grid; grid-template-columns:1fr auto; gap:3rem; align-items:center; padding:5rem 0 4rem; }
+  .hero img { width:200px; height:200px; object-fit:cover; border-radius:50%; box-shadow:0 0 0 1px var(--color-border), var(--shadow-lg); }
+  .eyebrow { color:var(--color-accent); font-family:var(--font-sans); font-size:.78rem; font-weight:700; letter-spacing:.12em; margin:0 0 .75rem; text-transform:uppercase; }
+  h1 { font-size:clamp(3.4rem, 9vw, 6.2rem); letter-spacing:-.055em; margin:0; }
+  .role { color:var(--color-text-main); font-family:var(--font-serif); font-size:1.35rem; margin:.6rem 0 1.2rem; }
+  .lead { font-size:1.16rem; max-width:45rem; }
+  .actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.75rem; }
+  .grid { border-top:1px solid var(--color-border); display:grid; grid-template-columns:repeat(3, 1fr); gap:2rem; padding:3rem 0; }
+  .grid article + article { border-left:1px solid var(--color-border); padding-left:2rem; }
+  .grid h2 { border:0; display:block; font-size:1.65rem; margin:0 0 .7rem; padding:0; }
+  .recognition { border-top:1px solid var(--color-border); padding:2.75rem 0 1rem; max-width:52rem; }
+  .recognition > p:last-of-type { color:var(--color-text-main); font-family:var(--font-serif); font-size:1.35rem; line-height:1.45; }
+  @media (max-width:700px) { .hero { grid-template-columns:1fr; padding:3rem 0; } .hero img { grid-row:1; width:150px; height:150px; } .grid { grid-template-columns:1fr; } .grid article + article { border-left:0; border-top:1px solid var(--color-border); padding-left:0; padding-top:2rem; } }
+</style>

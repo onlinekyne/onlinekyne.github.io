@@ -1,0 +1,5 @@
+---
+import BaseHead from '../components/BaseHead.astro'; import Header from '../components/Header.astro'; import Footer from '../components/Footer.astro'; import { SITE_TITLE } from '../consts';
+---
+<!doctype html><html lang="en"><head><BaseHead title={`About | ${SITE_TITLE}`} description="About Kyne Santos." image="/kyne.jpg" /></head><body><Header /><main><p class="eyebrow">About</p><h1>Kyne Santos</h1><p class="intro">Kyne Santos is a mathematician, researcher, author, keynote speaker, and science communicator.</p><p>Known as the math queen, Kyne creates public work about mathematics, science, history, and drag. Her work is grounded in the belief that mathematics can be rigorous, artistic, and inclusive.</p><p>Her book, <a href="/math-in-drag"><em>Math In Drag</em></a>, was published in 2024. Kyne has also appeared on the first season of <em>Canada’s Drag Race</em>.</p></main><Footer /></body></html>
+<style>.eyebrow{color:var(--color-accent);font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.intro{font-family:var(--font-serif);font-size:1.45rem;color:var(--color-text-main);max-width:50rem}</style>

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "kyne-santos",
+    "name": "Kyne Santos",
+    "title": "Mathematician, researcher, author, and science communicator",
+    "role": "Researcher",
+    "bio": "Kyne’s work explores mathematics, technology, culture, and public life.",
+    "avatar": "/kyne.jpg",
+    "website": "https://www.onlinekyne.com",
+    "linkedin": "https://www.linkedin.com/in/kmsantos/",
+    "email": "onlinekyne@gmail.com",
+    "sortOrder": 0,
+    "alumni": false
+  }
+]
